@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Java</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Main -->
+ <div id="start-screen">
+    <h2>Benvenuto nel Quiz Java!</h2>
+    <label for="playerName">Inserisci il tuo nome:</label>
+    <input type="text" id="playerName" placeholder="Nome giocatore">
+
+    <label for="questionCount">Seleziona il numero di domande:</label>
+    <select id="questionCount">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="50">50</option>
+    </select>
+
+    <button id="startBtn">Avvia Quiz</button>
+  </div>
+
+  <!-- Quiz -->
+  <div id="quiz">
+    <h2 id="quiz-title"></h2>
+    <div id="question"></div>
+    <div id="options"></div>
+    <button id="nextBtn">Domanda successiva</button>
+  </div>
+
+  <!-- Risultato -->
+  <div id="result">
+    <h2>Quiz completato!</h2>
+    <p id="scoreText"></p>
+    <button onclick="location.reload()">Ricomincia</button>
+  </div>
+  
+</body>
+</html>
